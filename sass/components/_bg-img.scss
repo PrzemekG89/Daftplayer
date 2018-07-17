@@ -1,0 +1,13 @@
+.bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .075;
+    overflow: hidden;
+    max-height: 436px;
+    
+    &__content{
+        height: 100%;
+        width: 100%;
+    }
+}

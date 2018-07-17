@@ -1,0 +1,121 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box;
+  background: #777;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+.audioplayer {
+  background-color: #1b1b1b;
+  max-width: 576px;
+  max-height: 1024px;
+  width: 100%;
+  position: relative; }
+
+.header {
+  padding: 10px 30px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between; }
+  .header__text {
+    text-align: center;
+    margin-top: 10px; }
+
+.heading-small {
+  text-transform: uppercase;
+  color: #9a9b9b; }
+
+.heading-medium {
+  font-size: 24px;
+  font-weight: 400; }
+
+.heading-big {
+  color: #0fd65a;
+  font-size: 36px;
+  font-weight: 400; }
+
+.cd-title {
+  text-align: center; }
+
+.u-inline-block {
+  display: inline-block; }
+
+.margin-top-small {
+  margin-top: 20px; }
+
+.bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .075;
+  overflow: hidden;
+  max-height: 436px; }
+  .bg-img__content {
+    height: 100%;
+    width: 100%; }
+
+.slider__img {
+  margin: 0 auto;
+  width: 100%; }
+
+.btn, .head-btn, .nav-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.head-btn {
+  height: 30px; }
+
+.nav-btn {
+  width: 30px;
+  height: 26px;
+  margin-top: 20px; }
+
+.back {
+  background-image: url("../images/shuffle_ico.svg"); }
+
+.more {
+  background-image: url("../images/more_ico.svg"); }
+
+.shuffle {
+  background-image: url("../images/shuffle_ico.svg"); }
+
+.repeat {
+  background-image: url("../images/repeat_ico.svg"); }
+
+.play {
+  background-image: url("../images/Play_active.png");
+  width: 100px;
+  height: 94px;
+  display: none; }
+
+.stop {
+  background-image: url("../images/Play_inactive.png");
+  width: 100px;
+  height: 94px; }
+
+.active {
+  display: inline-block; }
+
+.unactive {
+  display: none; }
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative; }

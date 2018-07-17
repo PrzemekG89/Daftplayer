@@ -1,0 +1,56 @@
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.head-btn {
+    @extend .btn;
+    height: 30px;
+}
+
+.nav-btn {
+    @extend .btn;
+    width: 30px;
+    height: 26px;
+    margin-top: 20px;
+}
+
+.back {
+    background-image: url("../images/shuffle_ico.svg");
+}
+
+.more {
+    background-image: url("../images/more_ico.svg");
+}
+
+.shuffle {
+    background-image: url("../images/shuffle_ico.svg");
+}
+
+.repeat {
+    background-image: url("../images/repeat_ico.svg");
+}
+
+.play {
+    background-image: url("../images/Play_active.png");
+    width: 100px;
+    height: 94px;
+    display: none;
+}
+
+.stop {
+    background-image: url("../images/Play_inactive.png");
+    width: 100px;
+    height: 94px;
+}
+
+.active {
+    display: inline-block;
+}
+
+.unactive {
+    display: none;
+}

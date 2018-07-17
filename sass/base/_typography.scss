@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.audioplayer {
+    background-color: $color-black;
+    max-width: 576px;
+    max-height: 1024px;
+    width: 100%;
+    position: relative;
+}
+
+.header {
+    padding: 10px 30px;
+    color: $color-white;
+    display: flex;
+    justify-content: space-between;
+
+    &__text {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+.heading-small {
+    text-transform: uppercase;
+    color: $color-grey-light;
+}
+
+.heading-medium {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.heading-big {
+    color: $color-green;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.cd-title {
+    text-align: center;
+}

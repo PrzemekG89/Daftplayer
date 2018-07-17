@@ -1,0 +1,22 @@
+.slick-prev,
+.slick-next
+{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.slick-prev {
+    position: absolute;
+    top: 40%;
+    left: 28%;
+    transform: translate(-40%, 38%);
+}
+
+.slick-next {
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    transform: translate(-40%, 38%);
+}
