@@ -9,7 +9,6 @@
 .audioplayer {
     background-color: $color-black;
     max-width: 576px;
-    max-height: 1024px;
     width: 100%;
     position: relative;
 }
@@ -19,7 +18,7 @@
     color: $color-white;
     display: flex;
     justify-content: space-between;
-
+    z-index: 15;
     &__text {
         text-align: center;
         margin-top: 10px;
@@ -32,7 +31,7 @@
 }
 
 .heading-medium {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 400;
 }
 
@@ -44,4 +43,22 @@
 
 .cd-title {
     text-align: center;
+    padding: 25px 0;
+}
+
+.player {
+    padding: 25px 0 0;
+}
+
+.footer {
+    background-color: $color-white;
+    padding: 15px 30px;
+    &__text{
+        padding-left: 10px;
+    }
+    &__time {
+        float: right;
+        color: $color-grey-light;
+        line-height: 40px;
+    }
 }

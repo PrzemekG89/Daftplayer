@@ -1,0 +1,8 @@
+.timeline {
+    display: flex;
+    justify-content: space-around;
+
+    &__timer {
+        color: $color-grey-light;
+    }
+}

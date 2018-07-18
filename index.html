@@ -21,19 +21,36 @@
                 <img src="images/bg_image.jpg" alt="Kanye Omari West raising hands" class="bg-img__content">
             </div>
             <section class="header">
-                <div class="margin-top-small">
-                    <a href="#" class="btn">
-                        <img src="images/back_ico.svg" alt="Back" class="btn__back">
-                    </a>
-                </div>
+                <button type="button" class="head-btn btn__back margin-top-small"></button>
                 <div class="header__text">
                     <h6 class="heading-small">Album</h6>
                     <h5 class="heading-medium">Unreleased</h5>
                 </div>
-                <div class="margin-top-small">
-                    <a href="#" class="btn">
-                        <img src="images/more_ico.svg" alt="Back" class="btn__more">
-                    </a>
+                <button id="more" type="button" class="head-btn btn__more margin-top-small"></button>
+                <div class="menu unactive">
+                    <div class="menu__content">
+                        <div class="menu__img">
+                            <img src="images/unreleased_cover.png" alt="CD Kanye">
+                        </div>
+                        <div class="cd-title">
+                            <h4 class="heading-big loading-wrap">
+                                <span id="loading-music" class="loading">Self Conscious</span>
+                            </h4>
+                            <h6 id="music-name" class="heading-small">Kanye West</h6>
+                        </div>
+                        <div>
+                            <img src="images/dotes.svg" alt="Dotes">
+                        </div>
+                        <div class="margin-top-small">
+                            <a href="#" class="btn">Add to playlist</a>
+                        </div>
+                        <div class="margin-top-small">
+                            <a href="#" class="btn">Show album</a>
+                        </div>
+                        <div class="margin-top-small">
+                            <a href="#" class="btn">Share with friends</a>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="slider">
@@ -54,26 +71,47 @@
                 <h6 id="music-name" class="heading-small">Kanye West</h6>
             </section>
             <section class="navigation">
-                <button type="button" class="nav-btn shuffle"></button>
+                <button type="button" class="nav-btn shuffle margin-top-small"></button>
                 <div class="flip-button">
                     <div class="flipper">
                         <button type="button" class="nav-btn stop" id="btn-stop"></button>
                         <button type="button" class="nav-btn play" id="btn-play"></button>
                     </div>
                 </div>
-                <button type="button" class="nav-btn repeat"></button>
+                <button type="button" class="nav-btn repeat margin-top-small"></button>
             </section>
             <section class="player">
-                
-                
-                <div class="timeline-wrap">
-                    <label id="time-count">00:00</label>
-                    <input type="range" class="range opaque" min="0" max="100" id="timeline" value="0" step="any">
-                    <label id="time">00:00</label>
+                <div class="timeline">
+                    <label class="timeline__timer time-count">01:47</label>
+                    <input type="range" class="range" min="0" max="100" id="timeline" value="1:47" step="any">
+                    <label class="timeline__timer time">04:21</label>
+                </div>
+                <div class="visualizer">
+                    <img src="images/waveform.png" alt="visualizer" class="visualizer__content">
                 </div>
             </section>
             <section class="footer">
-
+                <button class="nav-btn playlist-btn u-inline-block"></button>
+                <div class="footer__text u-inline-block">
+                    <h6 class="heading-small">Next</h6>
+                    <h5 class="heading-medium">Livin in a movie</h5>
+                </div>
+                <div class="footer__time u-inline-block">3,27</div>
+            </section>
+            <section class="playlist">
+                <div class="playlist__list">
+                    <div id="plwrap">
+                        <ul id="plList"></ul>
+                    </div>
+                </div>
+                <div class="playlist__button">
+                    <a class="btn shuffle-btn">Shuffle play</a>
+                </div>
+                <div class="playlist-btn playlist__hide">
+                    <a class="btn hide-btn">
+                        <img src="images/hide_ico.svg" alt="Back">
+                    </a>
+                </div>
             </section>
         </div>
     </div>

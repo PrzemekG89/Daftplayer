@@ -20,7 +20,6 @@ body {
 .audioplayer {
   background-color: #1b1b1b;
   max-width: 576px;
-  max-height: 1024px;
   width: 100%;
   position: relative; }
 
@@ -28,7 +27,8 @@ body {
   padding: 10px 30px;
   color: #fff;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  z-index: 15; }
   .header__text {
     text-align: center;
     margin-top: 10px; }
@@ -38,7 +38,7 @@ body {
   color: #9a9b9b; }
 
 .heading-medium {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400; }
 
 .heading-big {
@@ -47,7 +47,21 @@ body {
   font-weight: 400; }
 
 .cd-title {
-  text-align: center; }
+  text-align: center;
+  padding: 25px 0; }
+
+.player {
+  padding: 25px 0 0; }
+
+.footer {
+  background-color: #fff;
+  padding: 15px 30px; }
+  .footer__text {
+    padding-left: 10px; }
+  .footer__time {
+    float: right;
+    color: #9a9b9b;
+    line-height: 40px; }
 
 .u-inline-block {
   display: inline-block; }
@@ -55,12 +69,16 @@ body {
 .margin-top-small {
   margin-top: 20px; }
 
+.active-playlist {
+  display: block !important; }
+
 .bg-img {
   position: absolute;
   top: 0;
   left: 0;
   opacity: .075;
   overflow: hidden;
+  height: 50vh;
   max-height: 436px; }
   .bg-img__content {
     height: 100%;
@@ -70,25 +88,28 @@ body {
   margin: 0 auto;
   width: 100%; }
 
-.btn, .head-btn, .nav-btn {
+.btn, .head-btn, .foot-btn, .nav-btn {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  color: #fff;
+  text-decoration: none; }
 
-.head-btn {
-  height: 30px; }
+.head-btn, .foot-btn {
+  height: 30px;
+  width: 30px;
+  z-index: 300; }
 
 .nav-btn {
   width: 30px;
   height: 26px;
-  margin-top: 20px; }
+  background-size: cover; }
 
-.back {
-  background-image: url("../images/shuffle_ico.svg"); }
+.btn__back {
+  background-image: url("../images/back_ico.svg"); }
 
-.more {
+.btn__more {
   background-image: url("../images/more_ico.svg"); }
 
 .shuffle {
@@ -98,7 +119,7 @@ body {
   background-image: url("../images/repeat_ico.svg"); }
 
 .play {
-  background-image: url("../images/Play_active.png");
+  background-image: url("../images/Play.png");
   width: 100px;
   height: 94px;
   display: none; }
@@ -109,13 +130,97 @@ body {
   height: 94px; }
 
 .active {
-  display: inline-block; }
+  display: inline-block !important; }
 
 .unactive {
   display: none; }
+
+.playlist-btn {
+  background-image: url("../images/playlist_ico.svg");
+  width: 36px; }
+
+.shuffle-btn {
+  padding: 10px 80px;
+  position: absolute;
+  bottom: 60px;
+  background-color: #0fd65a;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px -20px 50px 0px white;
+  -moz-box-shadow: 0px -20px 50px 0px white;
+  box-shadow: 0px -20px 50px 0px white;
+  z-index: 10; }
+
+.hide-btn {
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hide-btn img {
+    height: 16px; }
 
 .navigation {
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: relative; }
+
+.visualizer {
+  padding-top: 20px; }
+  .visualizer__content {
+    margin-bottom: -5px; }
+
+.timeline {
+  display: flex;
+  justify-content: space-around; }
+  .timeline__timer {
+    color: #9a9b9b; }
+
+.playlist {
+  display: none; }
+  .playlist__list {
+    position: absolute;
+    background-color: #fff;
+    top: 75px;
+    width: 100%;
+    height: 80%;
+    overflow: scroll; }
+    .playlist__list ul {
+      list-style-type: none;
+      padding: 20px 30px; }
+    .playlist__list li {
+      line-height: 40px; }
+      .playlist__list li .plItem {
+        display: flex;
+        justify-content: space-between; }
+        .playlist__list li .plItem .plNum, .playlist__list li .plItem .plLength {
+          color: #9a9b9b; }
+  .playlist__button {
+    display: flex;
+    justify-content: center; }
+  .playlist__hide {
+    height: 40px; }
+
+.menu {
+  position: absolute;
+  background: rgba(27, 27, 27, 0.95);
+  top: 60px;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 90%; }
+  .menu__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+  .menu__img {
+    width: 150px; }
+    .menu__img img {
+      max-width: 100%; }
