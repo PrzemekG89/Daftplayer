@@ -7,8 +7,7 @@ $(document).ready(function () {
     });
 
     $('.flipper').click(function() {
-        $('.play').toggleClass('active', 'unactive', 1000, "easeOutSine");
-        $('.stop').toggleClass('unactive', 'active', 1000, "easeOutSine");
+        $('.stop').toggleClass('filter');
     })
 
     $('#more').click(function(){

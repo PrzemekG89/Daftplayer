@@ -62,7 +62,7 @@ body {
   position: relative; }
 
 .header {
-  padding: 10px 30px;
+  padding: 10px 25px;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -77,22 +77,22 @@ body {
   animation: moveInRight 1s ease-out; }
 
 .heading-medium {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   animation: moveInLeft 1s ease-out; }
 
 .heading-big {
   color: #0fd65a;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 400;
   animation: moveInRight 1s ease-out; }
 
 .cd-title {
   text-align: center;
-  padding: 25px 0; }
+  padding: 20px 0; }
 
 .player {
-  padding: 25px 0 0; }
+  padding: 20px 0 0; }
 
 .footer {
   background-color: #fff;
@@ -102,7 +102,7 @@ body {
   .footer__time {
     float: right;
     color: #9a9b9b;
-    line-height: 40px; }
+    line-height: 35px; }
 
 .u-inline-block {
   display: inline-block; }
@@ -112,6 +112,9 @@ body {
 
 .active-playlist {
   display: block !important; }
+
+.filter {
+  filter: brightness(1.5); }
 
 .bg-img {
   position: absolute;
@@ -147,7 +150,12 @@ body {
 .nav-btn {
   width: 30px;
   height: 26px;
-  background-size: cover; }
+  background-size: cover;
+  transition: all .3s; }
+  .nav-btn:hover {
+    filter: brightness(1.5); }
+  .nav-btn:active {
+    transform: translateY(0); }
 
 .btn__back {
   background-image: url("../images/back_ico.svg"); }
@@ -170,7 +178,8 @@ body {
 .stop {
   background-image: url("../images/Play_inactive.png");
   width: 100px;
-  height: 94px; }
+  height: 94px;
+  background-size: cover; }
 
 .active {
   display: inline-block !important; }
@@ -211,7 +220,10 @@ body {
 
 .btn-menu {
   animation: moveInBottom 0.5s ease-out .75s;
-  animation-fill-mode: backwards; }
+  animation-fill-mode: backwards;
+  transition: all .3s; }
+  .btn-menu:hover, .btn-menu :focus, .btn-menu :active {
+    color: #9a9b9b; }
 
 .navigation {
   display: flex;
@@ -279,8 +291,6 @@ body {
   .playlist__button {
     display: flex;
     justify-content: center; }
-  .playlist__hide {
-    height: 40px; }
 
 .menu {
   position: absolute;

@@ -22,6 +22,13 @@
     width: 30px;
     height: 26px;
     background-size: cover;
+    transition: all .3s;
+        &:hover {
+            filter: brightness(1.5);
+        }
+        &:active {
+            transform: translateY(0);
+        }
 }
 
 .foot-btn {
@@ -55,6 +62,7 @@
     background-image: url("../images/Play_inactive.png");
     width: 100px;
     height: 94px;
+    background-size: cover;
 }
 
 .active {
@@ -87,7 +95,7 @@
 }
 
 .hide-btn {
-    background: #fff;
+    background: $color-white;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -103,4 +111,8 @@
 .btn-menu {
     animation: moveInBottom 0.5s ease-out .75s;
     animation-fill-mode: backwards;
+    transition: all .3s;
+    &:hover,:focus,:active {
+        color: $color-grey-light;
+    }
 }
