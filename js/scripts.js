@@ -7,8 +7,8 @@ $(document).ready(function () {
     });
 
     $('.flipper').click(function() {
-        $('.play').toggleClass('active', 'unactive', 800);
-        $('.stop').toggleClass('unactive', 'active', 800);
+        $('.play').toggleClass('active', 'unactive');
+        $('.stop').toggleClass('unactive', 'active');
     })
 
     $('#more').click(function(){
@@ -92,5 +92,4 @@ $(document).ready(function () {
         $('.header__text, #more').toggleClass('unactive');
 
     });
-
 });

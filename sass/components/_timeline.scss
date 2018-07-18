@@ -6,3 +6,47 @@
         color: $color-grey-light;
     }
 }
+
+@mixin rangeThumb {
+  display: none;
+}
+
+@mixin rangeTrack {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: $color-grey-light;
+}
+
+
+.range input {
+  width: 250px;
+  height: 0;
+  -webkit-appearance: none;
+
+  // Thumb
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    @include rangeThumb;
+  }
+
+  &::-moz-range-thumb {
+    @include rangeThumb;
+  }
+
+  &::-ms-thumb {
+    @include rangeThumb;
+  }
+
+  &::-webkit-slider-runnable-track {
+    @include rangeTrack;
+  }
+
+  &::-moz-range-track {
+    @include rangeTrack;
+  }
+
+  &::-ms-track {
+    @include rangeTrack;
+  }
+}
