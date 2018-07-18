@@ -59,14 +59,10 @@
 
 .active {
     display: inline-block !important;
-    -webkit-transition: all .3s linear 0s;
-    transition: all .3s linear 0s;
 }
 
 .unactive {
     display: none;
-    -webkit-transition: all .3s linear 0s;
-    transition: all .3s linear 0s;
 }
 
 .playlist-btn {

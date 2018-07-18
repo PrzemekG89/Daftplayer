@@ -131,14 +131,10 @@ body {
   height: 94px; }
 
 .active {
-  display: inline-block !important;
-  -webkit-transition: all .3s linear 0s;
-  transition: all .3s linear 0s; }
+  display: inline-block !important; }
 
 .unactive {
-  display: none;
-  -webkit-transition: all .3s linear 0s;
-  transition: all .3s linear 0s; }
+  display: none; }
 
 .playlist-btn {
   background-image: url("../images/playlist_ico.svg");
@@ -245,7 +241,9 @@ body {
   left: 0;
   z-index: 100;
   width: 100%;
-  height: 90%; }
+  height: 90%;
+  -webkit-transition: all .5s ease-in-out 0s;
+  transition: all .5s ease-in-out 0s; }
   .menu__content {
     display: flex;
     flex-direction: column;

@@ -7,13 +7,13 @@ $(document).ready(function () {
     });
 
     $('.flipper').click(function() {
-        $('.play').toggleClass('active', 'unactive');
-        $('.stop').toggleClass('unactive', 'active');
+        $('.play').toggleClass('active', 'unactive', 1000, "easeOutSine");
+        $('.stop').toggleClass('unactive', 'active', 1000, "easeOutSine");
     })
 
     $('#more').click(function(){
-        $('.menu').toggleClass('active', 'unactive');
-        $('.header__text').toggleClass('unactive');
+        $('.menu').toggleClass('active', 'unactive', 1000, "easeOutSine");
+        $('.header__text').toggleClass('unactive', 1000, "easeOutSine");
     });
 
     var tracks = [{
