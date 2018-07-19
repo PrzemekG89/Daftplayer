@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/slick.css">
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <title>Daftplayer</title>
@@ -53,15 +51,20 @@
                     </div>
                 </div>
             </section>
-            <section class="slider margin-top-small">
-                <div>
-                    <img src="images/cover.png" alt="CD Steel" class="slider__img">
+            <section class="slider margin-top-small relative">
+                <div class="slider__content">
+                    <div>
+                        <img src="images/cover.png" alt="CD Steel" class="slider__img">
+                    </div>
+                    <div>
+                        <img src="images/unreleased_cover.png" alt="CD Kanye" class="slider__img">
+                    </div>
+                    <div>
+                        <img src="images/cover-1.png" alt="CD Steel" class="slider__img">
+                    </div>
                 </div>
-                <div>
-                    <img src="images/unreleased_cover.png" alt="CD Kanye" class="slider__img">
-                </div>
-                <div>
-                    <img src="images/cover-1.png" alt="CD Steel" class="slider__img">
+                <div class="daft-img">
+                    <img src="images/daft_logo.svg" alt="Daft logo" class="daft-img__content animate-pulse">
                 </div>
             </section>
             <section class="cd-title">
@@ -70,13 +73,10 @@
                 </h4>
                 <h6 id="music-name" class="heading-small">Kanye West</h6>
             </section>
-            <section class="navigation">
+            <section class="navigation relative">
                 <button type="button" class="nav-btn shuffle margin-top-small"></button>
-                <div class="flip-button">
-                    <div class="flipper">
-                        <button type="button" class="btn stop" id="btn-stop"></button>
-                        <button type="button" class="btn play" id="btn-play"></button>
-                    </div>
+                <div class="flipper">
+                    <button type="button" class="btn stop" id="btn-stop"></button>
                 </div>
                 <button type="button" class="nav-btn repeat margin-top-small"></button>
             </section>

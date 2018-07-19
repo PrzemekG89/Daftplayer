@@ -23,7 +23,6 @@
     position: relative;
 
     display: block;
-    overflow: hidden;
 
     margin: 0;
     padding: 0;
@@ -116,4 +115,28 @@
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+.slick-prev,
+.slick-next
+{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    transition: all .3s;
+}
+.slick-prev {
+    position: absolute;
+    top: 35%;
+    left: 28%;
+    transform: translate(-40%, 35%);
+}
+.slick-next {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    transform: translate(-40%, 35%);
+}
+.slick-track > div:not(.slick-center) {
+    transform: scale(.7);
 }

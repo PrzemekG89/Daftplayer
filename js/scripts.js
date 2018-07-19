@@ -1,7 +1,7 @@
 $(document).ready(function () {
-    $('.slider').slick({
+    $('.slider__content').slick({
         centerMode: true,
-        centerPadding: '60px',
+        centerPadding: '20px',
         slidesToShow: 1,
         appendArrows: $(".navigation"),
     });
@@ -11,8 +11,8 @@ $(document).ready(function () {
     })
 
     $('#more').click(function(){
-        $('.menu').toggleClass('active', 'unactive', 1000, "easeOutSine");
-        $('.header__text').toggleClass('unactive', 1000, "easeOutSine");
+        $('.menu').toggleClass('active', 'unactive');
+        $('.header__text').toggleClass('unactive');
     });
 
     var tracks = [{
@@ -89,6 +89,7 @@ $(document).ready(function () {
     $('.playlist-btn').click(function () {
         $('.playlist').toggleClass('active-playlist');
         $('.header__text, #more').toggleClass('unactive');
-
+        $('.navigation').toggleClass('relative');
+        $('.flipper').toggleClass('btn-up');
     });
 });

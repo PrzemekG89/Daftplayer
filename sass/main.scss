@@ -1,4 +1,5 @@
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
 @import "base/animation";
 @import "base/base";
@@ -13,3 +14,5 @@
 @import "components/timeline";
 @import "components/playlist";
 @import "components/menu";
+@import "components/daft-img";
+@import "components/slick";

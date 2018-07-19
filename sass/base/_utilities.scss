@@ -3,7 +3,7 @@
 }
 
 .margin-top-small {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .active-playlist {
@@ -12,4 +12,27 @@
 
 .filter {
     filter: brightness(1.5);
+}
+
+.active {
+    display: inline-block !important;
+}
+
+.unactive {
+    display: none;
+}
+
+.btn-up {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 300;
+    & button {
+        width: 60px;
+        height: 54px;
+    }
+}
+
+.relative {
+    position: relative;
 }
