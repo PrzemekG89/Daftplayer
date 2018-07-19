@@ -17,7 +17,7 @@
             & .plItem {
                 display: flex;
                 justify-content: space-between;
-
+                animation: moveInLeft 1s ease-out;
                 & .plNum, .plLength {
                     color: $color-grey-light;
                 }

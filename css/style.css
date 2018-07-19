@@ -303,7 +303,8 @@ body {
       line-height: 40px; }
       .playlist__list li .plItem {
         display: flex;
-        justify-content: space-between; }
+        justify-content: space-between;
+        animation: moveInLeft 1s ease-out; }
         .playlist__list li .plItem .plNum, .playlist__list li .plItem .plLength {
           color: #9a9b9b; }
   .playlist__button {
